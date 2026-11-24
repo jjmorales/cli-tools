@@ -17,7 +17,7 @@ Every tool installs the same way. Requires Python 3.9+ and [pipx](https://pipx.p
 (plain `pip` works too).
 
 1. Install the tool straight from GitHub, pointing at its folder with `#subdirectory=`
-   (replace `<you>` with the GitHub owner of this repo):
+   (`jjmorales` is the GitHub owner of this repo):
 
    ```
    pipx install "git+https://github.com/jjmorales/cli-tools.git#subdirectory=<tool-folder>"
