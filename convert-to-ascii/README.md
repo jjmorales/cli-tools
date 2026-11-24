@@ -13,13 +13,13 @@ Chromium (Playwright). It needs an internet connection to load the page.
 Requires Python 3.9+. Install straight from git (replace the URL with your repo):
 
 ```
-pipx install "git+https://github.com/<you>/<repo>.git"
+pipx install "git+https://github.com/jjmorales/<repo>.git"
 ```
 
 If the package lives in a subfolder of a larger repo (for example `cli-tools`):
 
 ```
-pipx install "git+https://github.com/<you>/cli-tools.git#subdirectory=convert-to-ascii"
+pipx install "git+https://github.com/jjmorales/cli-tools.git#subdirectory=convert-to-ascii"
 ```
 
 `pipx` puts the `convert-to-ascii` command on your PATH in its own isolated
@@ -156,7 +156,7 @@ means forever, `null` means not set).
 ## Development
 
 ```
-git clone https://github.com/<you>/cli-tools.git && cd cli-tools/convert-to-ascii
+git clone https://github.com/jjmorales/cli-tools.git && cd cli-tools/convert-to-ascii
 python -m venv .venv && .venv\Scripts\activate     # source .venv/bin/activate on macOS/Linux
 pip install -e ".[dev]"
 convert-to-ascii install

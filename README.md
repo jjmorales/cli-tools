@@ -20,7 +20,7 @@ Every tool installs the same way. Requires Python 3.9+ and [pipx](https://pipx.p
    (replace `<you>` with the GitHub owner of this repo):
 
    ```
-   pipx install "git+https://github.com/<you>/cli-tools.git#subdirectory=<tool-folder>"
+   pipx install "git+https://github.com/jjmorales/cli-tools.git#subdirectory=<tool-folder>"
    ```
 
 2. Run it by its command name, e.g. `<tool-folder> --help`.
@@ -32,7 +32,7 @@ with `pipx upgrade <tool-folder>`.
 ### Example: convert-to-ascii
 
 ```
-pipx install "git+https://github.com/<you>/cli-tools.git#subdirectory=convert-to-ascii"
+pipx install "git+https://github.com/jjmorales/cli-tools.git#subdirectory=convert-to-ascii"
 convert-to-ascii install     # one-time browser download (see the tool's README)
 convert-to-ascii --help
 ```
@@ -48,7 +48,7 @@ convert-to-ascii --help
 ## Developing a tool
 
 ```
-git clone https://github.com/<you>/cli-tools.git
+git clone https://github.com/jjmorales/cli-tools.git
 cd cli-tools/<tool-folder>
 python -m venv .venv && .venv\Scripts\activate     # source .venv/bin/activate on macOS/Linux
 pip install -e ".[dev]"
