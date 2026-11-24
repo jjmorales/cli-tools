@@ -54,3 +54,7 @@ python -m venv .venv && .venv\Scripts\activate     # source .venv/bin/activate o
 pip install -e ".[dev]"
 pytest
 ```
+
+## License
+
+[MIT](LICENSE)

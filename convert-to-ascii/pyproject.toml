@@ -7,6 +7,8 @@ name = "convert-to-ascii"
 version = "0.1.0"
 description = "Convert GIFs and images to per-frame ASCII art JSON using ascii-magic.com"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.9"
 dependencies = [
     "pillow>=10",
