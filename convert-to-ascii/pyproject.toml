@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "convert-to-ascii"
+version = "0.1.0"
+description = "Convert GIFs and images to per-frame ASCII art JSON using ascii-magic.com"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pillow>=10",
+    "playwright>=1.40,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+convert-to-ascii = "convert_to_ascii.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/convert_to_ascii"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

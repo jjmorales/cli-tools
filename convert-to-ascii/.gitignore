@@ -1,0 +1,17 @@
+# Input images/GIFs (keep the folders themselves via .gitkeep)
+gifs/*
+img/*
+!gifs/.gitkeep
+!img/.gitkeep
+
+# Generated ASCII output, wherever it lands (including --out folders named ascii_json)
+ascii_json/
+
+# Python / packaging
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
